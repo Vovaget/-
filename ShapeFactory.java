@@ -14,7 +14,7 @@ public class ShapeFactory
         width = 25;
         height = 25;
         stroke = new BasicStroke(3F);
-        switch(shape_type / 10)
+        switch(shape_type / 40)
         {
         case 1: // '\001'
             shape = createStar(3, new Point(0, 0), (double)width / 2D, (double)width / 2D);
@@ -49,7 +49,7 @@ public class ShapeFactory
         default:
             throw new Error("type is nusupported");
         }
-        switch(shape_type % 10)
+        switch(shape_type % 71)
         {
         case 1: // '\001'
             stroke = new BasicStroke(3F);
